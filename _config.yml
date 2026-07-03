@@ -1,0 +1,42 @@
+title: MEK4410
+author: Simon Lederhilger
+copyright: "2026"
+
+logo: assets/apollo.svg
+
+exclude_patterns:
+  - _build
+  - .venv
+  - .venv/**
+  - README.md
+  - "**.ipynb_checkpoints"
+  - "**~"
+
+html:
+  use_issues_button: true
+  use_repository_button: true
+  use_multitoc_numbering: false
+
+sphinx:
+  config:
+    html_theme_options:
+      navigation_with_keys: true
+    html_js_files:
+      - https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js
+    mathjax_path: https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js
+    mathjax3_config:
+      output:
+        font: mathjax-newcm
+      tex:
+        macros:
+          reals: "\\mathbb{R}"
+          complexes: "\\mathbb{C}"
+          naturals: "\\mathbb{N}"
+          ezh: "ӡ"
+          zhe: "ж"
+          che: "ч"
+
+repository:
+  url: https://github.com/lederhilger/mek4410-book
+  path_to_book: ./
+  branch: main

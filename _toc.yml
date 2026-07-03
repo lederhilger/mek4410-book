@@ -1,0 +1,6 @@
+format: jb-book
+root: intro
+parts:
+- caption: Lecture notes
+  chapters:
+  - file: notes/lifting-line
